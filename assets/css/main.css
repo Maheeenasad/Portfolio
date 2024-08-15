@@ -1,20 +1,5 @@
 
-/* Custom Fonts */
-@font-face{
-  font-family: 'Centra';
-  src: url('../assets/font/CentraNo2-Bold.ttf') format('truetype');
-  font-weight: 700;
-}
-@font-face{
-  font-family: 'Centra';
-  src: url('../assets/font/CentraNo2-Medium.ttf') format('truetype');
-  font-weight: 500;
-}
-@font-face{
-  font-family: 'Centra';
-  src: url('../assets/font/CentraNo2-Book.ttf') format('truetype');
-  font-weight: 400;
-}
+
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
@@ -84,7 +69,7 @@ body {
   /* position: relative; */
   background-color: #121212 !important;
   color: #fff !important;
-  font-family: 'Centra', sans-serif !important;
+  
 }
 h1, h2, h3 ,h4, h5, h6 {
   margin: 0;
@@ -112,15 +97,6 @@ input:focus, textarea:focus, select:focus {
   outline: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: var(--heading-color);
-  /* font-family: var(--heading-font); */
-}
 img {
   width: 100%;
   height: auto;
@@ -129,6 +105,7 @@ img {
 # Global Header
 --------------------------------------------------------------*/
 .header {
+  
   padding: 18px 0;
   position: fixed;
   width: 100%;
@@ -136,6 +113,7 @@ img {
   z-index: 9999;
   transition:  0.32s ease-in-out;
 }
+
 
 .header .logo {
   line-height: 1;
@@ -163,6 +141,7 @@ img {
   }
 
   .navmenu ul {
+    
     margin: 0;
     padding: 0;
     display: flex;
@@ -172,6 +151,7 @@ img {
 
   .navmenu li {
     position: relative;
+
   }
 
   .navmenu>ul>li {
@@ -185,11 +165,12 @@ img {
 
   .navmenu a,
   .navmenu a:focus {
+    font-family: "Montserrat", sans-serif;
     color: var(--nav-color);
     font-size: 20px;
     padding: 0 2px;
     font-family: var(--nav-font);
-    font-weight: 400;
+    font-weight: 500;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -350,6 +331,7 @@ img {
     overflow-y: auto;
     transition: 0.3s;
     z-index: 9998;
+  
   }
 
   .navmenu a,
@@ -708,6 +690,7 @@ section,
 }
 
 .hero .tagline {
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   letter-spacing: 0.8px;
   padding: 8px 10px;
@@ -717,7 +700,7 @@ section,
   color: #ffffff;
   margin-bottom: 16px;
   display: inline-block;
-  width: 275px;
+  width: 305px;
 }
 
 .hero .container {
@@ -726,7 +709,8 @@ section,
 }
 
 .hero h1 {
-  font-size: 60px;
+  font-size: 55px;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   color: #ffffff;
   letter-spacing: 0.8px;
@@ -736,7 +720,8 @@ section,
 }
 
 .hero p {
-  color: #B8B8B8;
+  font-family: "Montserrat", sans-serif;
+  color: #cfcfcf;
   font-size: 16px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
@@ -793,16 +778,18 @@ section,
 .about h1{
   font-size: 45px;
   font-weight: 700!important;
+  font-family: "Montserrat", sans-serif;
 }
 .about p{
+  font-family: "Montserrat", sans-serif;
   color: #B8B8B8;
-  font-size: 18px;
+  font-size: 16px;
   letter-spacing: 0.8px;
   font-weight: 400!important;
   line-height: 1.5em;
   margin: 14px 0 75px 0;
-  padding-left: 65px ;
-  padding-right: 65px ;
+  padding-left: 45px ;
+  padding-right: 45px ;
 }
 .background-image-left {
   position: absolute; /* Position the image absolutely */
@@ -821,6 +808,10 @@ section,
 .card-wrapper .item img{
   width: 50%;
   margin: 0 auto 15px auto;
+}
+.card-title{
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
 }
 .carousel-control-prev , .carousel-control-next{
   border-radius: 35px;
@@ -860,6 +851,7 @@ section,
   background-color: #000000!important;
 }
 .portfolio h1{
+  font-family: "Montserrat", sans-serif;
   font-size: 45px;
   font-weight: 700!important;
   color: #ffffff;
@@ -877,8 +869,8 @@ section,
 }
 
 .portfolio .portfolio-filters li {
+  font-family: "Montserrat", sans-serif;
   background-color: transparent;
-  /* border-radius: 0; */
   padding: 17px 0;
   color: #fff;
   width: 100%;
@@ -942,13 +934,14 @@ section,
   bottom: 0;
   z-index: 3;
   transition: all ease-in-out 0.3s;
-  background: linear-gradient(90.21deg, #484145 -5.91%, #040015 111.58%);
+  background: linear-gradient(90.21deg, #3f3f3f -5.91%, #040015 111.58%);
   padding: 15px;
   border-radius: 20px;
 }
 
 .portfolio .portfolio-item .portfolio-info h4 {
-  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
   font-weight: 600;
   padding-right: 50px;
   color: #ffffff!important;
@@ -1018,6 +1011,7 @@ section,
 .portfolio-details .swiper-button-next:hover:after {
   background-color: rgba(0, 0, 0, 0.3);
 }
+
 
 @media (max-width: 575px) {
 
