@@ -843,6 +843,24 @@ section,
   .card-title{
     font-size: 10px;
   }
+  .carousel-control-next-icon, .carousel-control-prev-icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 100% 100%;
+}
+  .carousel-control-prev, .carousel-control-next {
+    border-radius: 35px;
+    border: 0;
+    background: rgba(0, 0, 0, 0.5);
+    width: 35px;
+    height: 35px;
+    opacity: 1;
+    cursor: pointer;
+    top: 45px;
+}
 }
 
 
